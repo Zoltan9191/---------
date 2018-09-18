@@ -89,8 +89,8 @@ function post($url = null, $params = null, $proxy = null, $proxy_userpwd = null)
  if(isset($params['params'])) {
   curl_setopt($ch, CURLOPT_POST, 1);
   curl_setopt($ch, CURLOPT_POSTFIELDS, $params['params']);
-curl_setopt($ch, CURLOPT_COOKIEJAR, dirname(__FILE__) . '/coo.txt');   //
-curl_setopt($ch, CURLOPT_COOKIEFILE, dirname(__FILE__) . '/coo.txt');  //
+  curl_setopt($ch, CURLOPT_COOKIEJAR, dirname(__FILE__) . '/coo.txt');   //
+  curl_setopt($ch, CURLOPT_COOKIEFILE, dirname(__FILE__) . '/coo.txt');  //
  }
  
  if(isset($params['headers'])) {
@@ -111,22 +111,6 @@ curl_setopt($ch, CURLOPT_COOKIEFILE, dirname(__FILE__) . '/coo.txt');  //
  
  $result = curl_exec($ch);
  
-////////////////////////////////////////////
-// $html = new simple_html_dom();
-// $html->load($result);
-// $html = file_get_html($result);
- //$kek = file_get_html($html);
- 
-// echo " html= " . $html . " =html ";
-// $div_video=$html->find('video',0);
- //echo " vid= " . $div_video . " =vid ";
-
- //foreach($html->find('video') as $content) 
-   //    echo $content->http . '<br>';
-	   
-//	   foreach ($html->find('<div class="videoplayer_media">') as $content)
-  // echo $content . '<br>';
- ///////////////////////////////////////////
  
  $result_explode = explode("\r\n\r\n", $result);
  
@@ -141,11 +125,6 @@ curl_setopt($ch, CURLOPT_COOKIEFILE, dirname(__FILE__) . '/coo.txt');  //
  
  return array('headers' => $headers, 'cookies' => $cookies, 'content' => $content);
 }
-
-
-// https://video-amt2-1.xx.fbcdn.net/v/t42.1790-2/16773485_618389698362124_8040896282463567872_n.mp4?efg=eyJybHIiOjM4OCwicmxhIjo1ODEsInZlbmNvZGVfdGFnIjoic3ZlX3NkIn0%3D&rl=388&vabr=216&oh=6bde75a7a9e0c766b8970c5610f0cadd&oe=593DA164            norm 
-// https://video-amt2-1.xx.fbcdn.net/v/t43.1792-2/16462684_746230602193750_6776466143973474304_n.mp4?efg=eyJybHIiOjE3MDEsInJsYSI6MzA1MiwidmVuY29kZV90YWciOiJzdmVfaGQifQ%3D%3D&rl=1701&vabr=1134&oh=95237488bbf17411763ab1497ce54951&oe=593DBC33    hd
-
 
 ?>
 <link rel="stylesheet" type="text/css" href="FB.css">
