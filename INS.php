@@ -54,8 +54,8 @@ function post($url = null, $params = null, $proxy = null, $proxy_userpwd = null)
  if(isset($params['params'])) {
   curl_setopt($ch, CURLOPT_POST, 1);
   curl_setopt($ch, CURLOPT_POSTFIELDS, $params['params']);
-curl_setopt($ch, CURLOPT_COOKIEJAR, dirname(__FILE__) . '/coo.txt');   //
-curl_setopt($ch, CURLOPT_COOKIEFILE, dirname(__FILE__) . '/coo.txt');  //
+  curl_setopt($ch, CURLOPT_COOKIEJAR, dirname(__FILE__) . '/coo.txt');   //
+  curl_setopt($ch, CURLOPT_COOKIEFILE, dirname(__FILE__) . '/coo.txt');  //
  }
  
  if(isset($params['headers'])) {
