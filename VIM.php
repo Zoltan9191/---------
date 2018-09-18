@@ -1,12 +1,5 @@
 <?php
-
-
-//<video preload="" src="https://07-lvl3-pdl.vimeocdn.com/01/3590/0/17950038/35405750.mp4?expires=1499942663&amp;token=091a1dfd26f7c925657d4"></video>
-// xpath //*[@id="17950038"]/div/div[1]/div/div/video
-
-
 require_once("simple_html_dom.php");
-
 
 $need_page = $_POST['UERL'];
 
