@@ -130,50 +130,10 @@ function post($url = null, $params = null, $proxy = null, $proxy_userpwd = null)
 
 <?//if($Confmatch[0][2] !=null) {echo " a align='center' id='a1-div-a' class='text-center' href="; echo $Confmatch[0][1] ."download=''";echo "Downlod" . $Confmatch[0][2]  ; } 
 
-if($Confmatch[0][2] !=null) {
-	
-	echo "<a align='center' id='a1-div-a' class='text-center' href=".$Confmatch[0][1]."download=''>Download ".$Confmatch[0][2]."</a>";
-	echo "<br>";echo "<br>";
-}
-if($Confmatch[1][2] !=null) {
-	
-	echo "<a align='center' id='a1-div-a' class='text-center' href=".$Confmatch[1][1]."download=''>Download ".$Confmatch[1][2]."</a>";
-	echo "<br>";echo "<br>";
-}
-if($Confmatch[2][2] !=null) {
-	
-	echo "<a align='center' id='a1-div-a' class='text-center' href=".$Confmatch[2][1]."download=''>Download ".$Confmatch[2][2]."</a>";
-	echo "<br>";echo "<br>";
-}
-if($Confmatch[3][2] !=null) {
-	
-	echo "<a align='center' id='a1-div-a' class='text-center' href=".$Confmatch[3][1]."download=''>Download ".$Confmatch[3][2]."</a>";
-	echo "<br>";echo "<br>";
-}
-if($Confmatch[4][2] !=null) {
-	
-	echo "<a align='center' id='a1-div-a' class='text-center' href=".$Confmatch[4][1]."download=''>Download ".$Confmatch[4][2]."</a>";
-	echo "<br>";echo "<br>";
-}
-if($Confmatch[5][2] !=null) {
-	
-	echo "<a align='center' id='a1-div-a' class='text-center' href=".$Confmatch[5][1]."download=''>Download ".$Confmatch[5][2]."</a>";
-	echo "<br>";echo "<br>";
-}
-if($Confmatch[6][2] !=null) {
-	
-	echo "<a align='center' id='a1-div-a' class='text-center' href=".$Confmatch[6][1]."download=''>Download ".$Confmatch[6][2]."</a>";
-	echo "<br>";echo "<br>";
-}
-if($Confmatch[7][2] !=null) {
-	
-	echo "<a align='center' id='a1-div-a' class='text-center' href=".$Confmatch[7][1]."download=''>Download ".$Confmatch[7][2]."</a>";
-	echo "<br>";echo "<br>";
-}
-if($Confmatch[8][2] !=null) {
-	
-	echo "<a align='center' id='a1-div-a' class='text-center' href=".$Confmatch[8][1]."download=''>Download ".$Confmatch[8][2]."</a>";
-	echo "<br>";echo "<br>";
+for (var i=0; i<8; i++) {
+	if($Confmatch[i][2] !=null) {
+		echo "<a align='center' id='a1-div-a' class='text-center' href=".$Confmatch[i][1]."download=''>Download ".$Confmatch[i][2]."</a>";
+		echo "<br> <br>";
 }
 
 ?>  
