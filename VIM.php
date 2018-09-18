@@ -121,21 +121,18 @@ function post($url = null, $params = null, $proxy = null, $proxy_userpwd = null)
 <link rel="stylesheet" type="text/css" href="FB.css">
 
 <div class="a1-div1">      
-
-<video width="500" height="400" poster="<?echo $Photo[0][1];?>"
- controls=""  name="media"><source src="<?echo $Confmatch[0][1];?>" type="video/mp4" download="720p Quality" >  </video>
-  </div>
+	<video width="500" height="400" poster="<?echo $Photo[0][1];?>"
+ 	controls=""  name="media"><source src="<?echo $Confmatch[0][1];?>" type="video/mp4" download="720p Quality" >  </video>
+</div>
 
 <div class="a1-div2">
 
-<?//if($Confmatch[0][2] !=null) {echo " a align='center' id='a1-div-a' class='text-center' href="; echo $Confmatch[0][1] ."download=''";echo "Downlod" . $Confmatch[0][2]  ; } 
-
+<?
 for (var i=0; i<8; i++) {
 	if($Confmatch[i][2] !=null) {
 		echo "<a align='center' id='a1-div-a' class='text-center' href=".$Confmatch[i][1]."download=''>Download ".$Confmatch[i][2]."</a>";
 		echo "<br> <br>";
 }
-
 ?>  
 
 
