@@ -35,7 +35,6 @@ $Photo;
 
 	function FindURL()
 	{
-	//	global $GUShtml;
 		global $HTMLFB;
 		//echo $HTMLFB;
 
